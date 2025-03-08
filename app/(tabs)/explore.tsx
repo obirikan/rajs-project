@@ -25,7 +25,7 @@ const VideoFeed = () => {
   
   const fetchVideos = async () => {
     try {
-      const response = await fetch('YOUR_API_URL/api/videos/preload');
+      const response = await fetch('');
       const data = await response.json();
       setVideos(data.videos);
     } catch (error) {
