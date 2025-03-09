@@ -3,7 +3,6 @@ import React from 'react';
 import { Platform } from 'react-native';
 
 export default function TabLayout() {
-
   return (
     <Tabs
       screenOptions={{
@@ -16,15 +15,21 @@ export default function TabLayout() {
         }),
       }}>
       <Tabs.Screen
-        name="index"
+        name="(home)"
         options={{
-          title: 'Home'
+          title: 'home'
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="(profile)"
         options={{
-          title: 'Explore',
+          title: 'profile'
+        }}
+      />
+        <Tabs.Screen
+        name="(notification)"
+        options={{
+          title: 'Notification'
         }}
       />
     </Tabs>
